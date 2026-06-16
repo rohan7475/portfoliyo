@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Rohan Singh | Full-Stack Software Engineer & Creative UI Designer</title>
+  <meta name="description" content="Portfolio of Rohan Singh, a full-stack software engineer and creative designer specializing in high-performance web applications, climate intelligence platforms, and e-commerce designs.">
+  <meta name="author" content="Rohan Singh">
+  <meta name="keywords" content="Rohan Singh, Software Engineer, Portfolio, Full-Stack Developer, Delhi NCR Climate AI, EasyStyle Hub, Netflix Clone, Easy Buy">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Rohan Singh | Full-Stack Software Engineer & Creative UI Designer">
+  <meta property="og:description" content="Explore my portfolio featuring UODP 2.0 (Climate AI), EasyStyle Hub, and interactive web experiences.">
+  <meta property="og:image" content="assets/hero-avatar.png">
+
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Scroll Sentinel for Back-to-Top trigger -->
+  <div id="scroll-sentinel" class="scroll-sentinel"></div>
+
+  <!-- Header & Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <a class="navbar-brand-custom" href="#home" id="brand-logo" aria-label="Rohan Singh Portfolio Logo">
+        <span class="brand-bracket">&lt;</span>Rohan<span class="brand-bracket">.S /&gt;</span>
+      </a>
+      
+      <!-- Mobile toggle menu button -->
+      <button class="navbar-toggler theme-toggle-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item">
+            <a class="nav-link-custom active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link-custom" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link-custom" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link-custom" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link-custom" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+            <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle dark/light color scheme">
+              <i class="fa-solid fa-moon"></i>
+              <i class="fa-solid fa-sun"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content Area -->
+  <main>
+    
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <!-- Ambient Background Glows -->
+      <div class="hero-glow-1"></div>
+      <div class="hero-glow-2"></div>
+      
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <!-- Text column -->
+          <div class="col-lg-7 text-start">
+            <span class="hero-greet">Hello, World! I am</span>
+            <h1 class="hero-title">Rohan Singh</h1>
+            <div class="hero-subtitle">
+              <span>A </span><span class="typing-text text-gradient-text" id="typing-element"></span><span class="typing-cursor">|</span>
+            </div>
+            <p class="hero-description">
+              I design and build production-grade web systems bridging advanced software architecture and creative user interfaces. Specializing in high-performance analytics, interactive data overlays, and responsive e-commerce frameworks.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#projects" class="btn btn-custom-primary">View Projects <i class="fa-solid fa-arrow-right ms-2"></i></a>
+              <a href="#contact" class="btn btn-custom-secondary">Let's Connect</a>
+            </div>
+            
+            <!-- Hero Social Icons -->
+            <div class="d-flex gap-3 mt-5 align-items-center">
+              <span class="text-secondary fw-semibold">Find me on:</span>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="mailto:contact@rohansingh.dev" class="footer-social-link" aria-label="Email Address"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </div>
+          
+          <!-- Image column (Avatar frame) -->
+          <div class="col-lg-5 hero-avatar-container">
+            <div class="hero-avatar-frame">
+              <img src="assets/hero-avatar.png" alt="Rohan Singh's Illustrated Avatar" class="hero-avatar-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section-padding" id="about">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section-subtitle">Get To Know Me</span>
+          <h2 class="section-title mb-0">About Me</h2>
+        </div>
+        
+        <div class="row gy-5 align-items-stretch">
+          <!-- Left Info Column -->
+          <div class="col-lg-6 d-flex flex-column justify-content-center">
+            <h3 class="fw-bold mb-3">Crafting digital solutions with clean architectures & stunning designs.</h3>
+            <p class="text-secondary mb-4 leading-relaxed">
+              I am a software engineer with a deep passion for building interactive systems that perform efficiently under load. Whether configuring map rendering matrices for data dashboards, organizing state updates in React, or refining styling variables for cross-platform responsiveness, I strive for clean execution.
+            </p>
+            <p class="text-secondary mb-4 leading-relaxed">
+              Based in Delhi NCR, I enjoy blending complex algorithms (like graph routing models and search optimizations) with beautiful frontend interactions. I work closely with modern web tooling to build responsive interfaces that wow users.
+            </p>
+            <div>
+              <a href="assets/hero-avatar.png" download="Rohan_Singh_Resume.png" class="btn btn-custom-secondary px-4 py-2 mt-2">
+                <i class="fa-solid fa-download me-2"></i> Download Resume
+              </a>
+            </div>
+          </div>
+          
+          <!-- Right Stats Column -->
+          <div class="col-lg-6 d-flex align-items-center">
+            <div class="stats-grid w-100">
+              <div class="stat-card glass-card">
+                <div class="stat-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                <div class="stat-number">3+</div>
+                <div class="stat-label">Years Coding</div>
+              </div>
+              <div class="stat-card glass-card">
+                <div class="stat-icon"><i class="fa-solid fa-cubes"></i></div>
+                <div class="stat-number">15+</div>
+                <div class="stat-label">Projects Completed</div>
+              </div>
+              <div class="stat-card glass-card">
+                <div class="stat-icon"><i class="fa-solid fa-code-commit"></i></div>
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Contributions</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section-padding" id="skills">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section-subtitle">What I Excel In</span>
+          <h2 class="section-title mb-0">My Toolkit</h2>
+        </div>
+        
+        <div class="row g-4">
+          <!-- Col 1: Frontend -->
+          <div class="col-lg-4 col-md-6">
+            <div class="glass-card skill-card h-100">
+              <div class="skill-card-body">
+                <h3 class="skill-category-title"><i class="fa-solid fa-code"></i> Frontend UI</h3>
+                
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">HTML5 / Semantic Markup</span>
+                    <span class="skill-percentage">95%</span>
+                  </div>
+                  <div class="progress-bar-container">
+                    <div class="progress-bar-fill" data-width="95%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">CSS3 / Flexbox / Custom Variables</span>
+                    <span class="skill-percentage">90%</span>
+                  </div>
+                  <div class="progress-bar-container">
+                    <div class="progress-bar-fill" data-width="90%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">JavaScript (ES6+)</span>
+                    <span class="skill-percentage">88%</span>
+                  </div>
+                  <div class="progress-bar-container">
+                    <div class="progress-bar-fill" data-width="88%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">React / Next.js Framework</span>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="progress-bar-container">
+                    <div class="progress-bar-fill" data-width="85%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Col 2: Backend -->
+          <div class="col-lg-4 col-md-6">
+            <div class="glass-card skill-card h-100">
+              <div class="skill-card-body">
+                <h3 class="skill-category-title"><i class="fa-solid fa-server"></i> Backend & Tooling</h3>
+                
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Node.js / Express</span>
+                    <span class="skill-percentage">80%</span>
+                  </div>
+                  <div class="progress-bar-container">
+                    <div class="progress-bar-fill" data-width="80%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Python scripting</span>
+                    <span class="skill-percentage">75%</span>
+                  </div>
+                  <div class="progress-bar-container">
+                    <div class="progress-bar-fill" data-width="75%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">SQL / PostgreSQL</span>
+                    <span class="skill-percentage">70%</span>
+                  </div>
+                  <div class="progress-bar-container">
+                    <div class="progress-bar-fill" data-width="70%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Git & Branch Management</span>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="progress-bar-container">
+                    <div class="progress-bar-fill" data-width="85%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Col 3: UX & Performance -->
+          <div class="col-lg-4 col-md-12">
+            <div class="glass-card skill-card h-100">
+              <div class="skill-card-body">
+                <h3 class="skill-category-title"><i class="fa-solid fa-bezier-curve"></i> UX & Principles</h3>
+                
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Responsive layouts (Bootstrap / Tailwind)</span>
+                    <span class="skill-percentage">95%</span>
+                  </div>
+                  <div class="progress-bar-container">
+                    <div class="progress-bar-fill" data-width="95%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Figma prototyping</span>
+                    <span class="skill-percentage">80%</span>
+                  </div>
+                  <div class="progress-bar-container">
+                    <div class="progress-bar-fill" data-width="80%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Web Vitals Performance / SEO</span>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="progress-bar-container">
+                    <div class="progress-bar-fill" data-width="85%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Accessibility (WCAG / ARIA tags)</span>
+                    <span class="skill-percentage">90%</span>
+                  </div>
+                  <div class="progress-bar-container">
+                    <div class="progress-bar-fill" data-width="90%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section-padding" id="projects">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section-subtitle">My Creative Work</span>
+          <h2 class="section-title mb-0">Featured Projects</h2>
+        </div>
+        
+        <!-- Filters buttons -->
+        <div class="d-flex justify-content-center mb-5">
+          <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="climate">Climate AI</button>
+            <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+            <button class="filter-btn" data-filter="streaming">Streaming UI</button>
+          </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-masonry">
+          
+          <!-- Project 1: UODP 2.0 -->
+          <div class="project-card-wrapper" data-category="climate">
+            <article class="glass-card project-card">
+              <div class="project-img-container">
+                <img src="assets/project-uodp.png" alt="UODP 2.0 Delhi Climate Dashboard mockup" class="project-img">
+                <div class="project-overlay">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View UODP source code"><i class="fa-brands fa-github"></i></a>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View UODP live demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+              <div class="project-details">
+                <span class="project-tag">Climate AI / Analytics</span>
+                <h3 class="project-card-title">UODP 2.0 Climate Platform</h3>
+                <p class="project-desc">
+                  An AI & Graph Theory platform optimization engine for tracking Delhi NCR environmental health. Fuses satellite telemetry, expected tree survival forecasts, and 6 graph algorithms (MST, PageRank, Dijkstra, Set Cover).
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">Next.js</span>
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">Mapbox GL</span>
+                  <span class="tech-tag">CesiumJS</span>
+                  <span class="tech-tag">Zustand</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project 2: EasyStyle Hub -->
+          <div class="project-card-wrapper" data-category="ecommerce">
+            <article class="glass-card project-card">
+              <div class="project-img-container">
+                <img src="assets/project-easystyle.png" alt="EasyStyle Hub e-commerce storefront mockup" class="project-img">
+                <div class="project-overlay">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View EasyStyle source code"><i class="fa-brands fa-github"></i></a>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View EasyStyle live demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+              <div class="project-details">
+                <span class="project-tag">E-Commerce Store</span>
+                <h3 class="project-card-title">EasyStyle Fashion Hub</h3>
+                <p class="project-desc">
+                  The ultimate destination website for premium student fashion. Integrates robust client-side filters, quick view modals, interactive wishlist & cart sidebars, local store finders, and a secure checkout flow.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">Vite</span>
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Tailwind CSS</span>
+                  <span class="tech-tag">shadcn/ui</span>
+                  <span class="tech-tag">Zod</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project 3: Netflix UI -->
+          <div class="project-card-wrapper" data-category="streaming">
+            <article class="glass-card project-card">
+              <div class="project-img-container">
+                <img src="assets/project-netflix.png" alt="Netflix Clone UI dashboard mockup" class="project-img">
+                <div class="project-overlay">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View Netflix source code"><i class="fa-brands fa-github"></i></a>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View Netflix live demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+              <div class="project-details">
+                <span class="project-tag">Streaming Interface</span>
+                <h3 class="project-card-title">Netflix Web Clone</h3>
+                <p class="project-desc">
+                  A pixel-perfect streaming app home interface built in native web technologies. Employs modular scrolling carousels, responsive grid scales, custom video background overlays, hover details, and a search console.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">HTML5</span>
+                  <span class="tech-tag">Vanilla CSS</span>
+                  <span class="tech-tag">JavaScript ES6</span>
+                  <span class="tech-tag">Flexbox</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project 4: Easy Buy -->
+          <div class="project-card-wrapper" data-category="ecommerce">
+            <article class="glass-card project-card">
+              <div class="project-img-container">
+                <img src="assets/project-easybuy.png" alt="Easy Buy e-commerce sale catalog mockup" class="project-img">
+                <div class="project-overlay">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View Easy Buy source code"><i class="fa-brands fa-github"></i></a>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View Easy Buy live demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+              <div class="project-details">
+                <span class="project-tag">Web Store catalog</span>
+                <h3 class="project-card-title">Easy Buy Sale Platform</h3>
+                <p class="project-desc">
+                  A React-based seasonal shopping hub featuring automated price discounts on winter jackets, summer swimsuits, and general clearance apparel. Integrates simple shopping cards and responsiveness attributes.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">Next.js</span>
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">CSS Modules</span>
+                  <span class="tech-tag">TypeScript</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section-padding" id="contact">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section-subtitle">Get In Touch</span>
+          <h2 class="section-title mb-0">Contact Me</h2>
+        </div>
+        
+        <div class="row g-5">
+          <!-- Contact details column -->
+          <div class="col-lg-5">
+            <div class="glass-card contact-card">
+              <div class="contact-icon-box"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <h3 class="contact-card-title">Email Me</h3>
+                <a href="mailto:contact@rohansingh.dev" class="contact-card-link">contact@rohansingh.dev</a>
+              </div>
+            </div>
+            
+            <div class="glass-card contact-card">
+              <div class="contact-icon-box"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <h3 class="contact-card-title">Location</h3>
+                <p class="contact-card-detail mb-0">Delhi NCR, India</p>
+              </div>
+            </div>
+
+            <div class="glass-card contact-card">
+              <div class="contact-icon-box"><i class="fa-solid fa-circle-check"></i></div>
+              <div>
+                <h3 class="contact-card-title">Response Time</h3>
+                <p class="contact-card-detail mb-0">Typically within 24 hours</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form column -->
+          <div class="col-lg-7">
+            <div class="glass-card contact-form-card">
+              <form id="contact-form" novalidate>
+                <div class="row">
+                  <div class="col-md-6 form-group-custom">
+                    <label for="contact-name" class="form-label-custom">Full Name</label>
+                    <input type="text" id="contact-name" class="form-input-custom" placeholder="e.g. John Doe">
+                    <div id="contact-name-error" class="error-feedback" role="alert" aria-live="polite"></div>
+                  </div>
+                  <div class="col-md-6 form-group-custom">
+                    <label for="contact-email" class="form-label-custom">Email Address</label>
+                    <input type="email" id="contact-email" class="form-input-custom" placeholder="e.g. john@example.com">
+                    <div id="contact-email-error" class="error-feedback" role="alert" aria-live="polite"></div>
+                  </div>
+                </div>
+                
+                <div class="form-group-custom">
+                  <label for="contact-subject" class="form-label-custom">Subject</label>
+                  <input type="text" id="contact-subject" class="form-input-custom" placeholder="What are we talking about?">
+                  <div id="contact-subject-error" class="error-feedback" role="alert" aria-live="polite"></div>
+                </div>
+
+                <div class="form-group-custom">
+                  <label for="contact-message" class="form-label-custom">Message</label>
+                  <textarea id="contact-message" class="form-input-custom" rows="5" placeholder="Write your message here..."></textarea>
+                  <div id="contact-message-error" class="error-feedback" role="alert" aria-live="polite"></div>
+                </div>
+
+                <button type="submit" class="btn btn-custom-primary px-4 py-2 mt-2" id="submit-btn">
+                  <span id="btn-text">Send Message</span>
+                  <div class="submit-spinner" id="submit-spinner" role="status" aria-hidden="true"></div>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row gy-4 justify-content-between">
+        <div class="col-lg-4 col-md-6">
+          <a class="navbar-brand-custom" href="#home">
+            <span class="brand-bracket">&lt;</span>Rohan<span class="brand-bracket">.S /&gt;</span>
+          </a>
+          <p class="footer-description">
+            Designing and developing premium responsive digital web systems. Focused on clean structures and scalable solutions.
+          </p>
+          <div class="footer-socials">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-6">
+          <h3 class="footer-title">Directory</h3>
+          <ul class="footer-links-list">
+            <li><a href="#home" class="footer-nav-link">Home</a></li>
+            <li><a href="#about" class="footer-nav-link">About</a></li>
+            <li><a href="#skills" class="footer-nav-link">Skills</a></li>
+            <li><a href="#projects" class="footer-nav-link">Projects</a></li>
+            <li><a href="#contact" class="footer-nav-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-6">
+          <h3 class="footer-title">Services</h3>
+          <ul class="footer-links-list text-secondary">
+            <li class="small">Frontend Development</li>
+            <li class="small">Full-Stack Architecture</li>
+            <li class="small">UI/UX Design Strategy</li>
+            <li class="small">Web Performance / SEO</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom text-center">
+        <p class="mb-0">&copy; 2026 Rohan Singh. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back-to-Top Button -->
+  <button id="back-to-top-btn" class="back-to-top" aria-label="Back to top of page">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 Bundle JS (defer loaded) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+  
+  <!-- Interactivity Controller Script -->
+  <script src="app.js" defer></script>
+</body>
+</html>
